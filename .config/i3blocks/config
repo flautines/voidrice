@@ -1,0 +1,54 @@
+command=~/.local/bin/statusbar/$BLOCK_NAME
+separator_block_width=15
+markup=pango
+
+#[pacpackages]
+# label=📦
+# interval=once
+# signal=8
+
+[weather]
+color=#F4a444
+interval=18000
+signal=5
+
+# [mailbox]
+# label=📬
+# interval=180
+# signal=12
+
+#[memory]
+#interval=30
+#label=🧠
+
+[disk]
+color=#DF60F0
+interval=60
+command=~/.local/bin/statusbar/disk / 🖴
+
+#[cpu]
+#interval=15
+#label=💻
+
+[volume]
+color=#24F4F4
+instance=Master
+interval=once
+signal=10
+
+[internet]
+color=#64FF24
+interval=10
+separator=false
+
+[iface]
+color=#00FF00
+interval=10
+
+[clock]
+color=#C4C4C4
+label=📅
+interval=30
+
+#[help]
+#interval=once

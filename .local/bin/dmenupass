@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# This script runs when sudo -A is executed
+# SUDO_ASKPASS must be set to point to this script
+
+dmenu -fn "Monospace-18" -sb "#d79921" -sf "#1d2021" -nf "#000000" -nb "#000000" -p "$1" <&- && echo

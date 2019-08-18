@@ -1,0 +1,15 @@
+#!/bin/sh
+alias ka="killall" \
+  xi="sudo xbps-install" \
+  xr="sudo xbps-remove" \
+  xq="sudo xbps-query" \
+  e="$EDITOR" \
+  x="sxiv -ft *" \
+  sdn="sudo shutdown -h now" \
+  ls="ls -hN --color=auto --group-directories-first" \
+  grep="grep --color=auto" \
+  diff="diff --color=auto" \
+  yt="/usr/bin/youtube-dl" \
+  yta="yt -x -f bestaudio/best" \
+  YT="/usr/bin/youtube-viewer -C -S" \
+  

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+case $BLOCK_BUTTON in
+  3) pgrep -x dunst >/dev/null && notify-send "🌐 Internet module" "\
+❎: no ethernet
+🌐: ethernet working
+" ;;
+esac
+
+printf "%s" "$(cat /sys/class/net/e*/operstate | sed "s/down/❎/;s/up/🌐/")"
